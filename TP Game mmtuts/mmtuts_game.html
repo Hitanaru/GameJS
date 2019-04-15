@@ -4,6 +4,10 @@
 	<meta charset="utf-8">
 	<meta name=viewport content="width=device-width", initial-scale=1">
 	<title></title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/game-manager.js"></script>
+	<script src="js/player.js"></script>
+	<script src="js/enemy.js"></script><!-- On met les js avant car c'est un jeu et pas un site, on veut load le js avant le reste-->
 </head>
 <body>
 
@@ -13,8 +17,34 @@
 	</div>
 
 	<div class="interface">
-		<a href="#">
-			<img src="" alt"">
+		<a href="#" onclick="GetManager.setGameStart('Warrior')">
+			<img src="img/hero/img01.png" alt="warrior">
+			<div>
+				<h3>Warrior</h3>
+				<p>Warrior have higher health and stamina, however their
+				   strenght also makes them slower and clumsier.</p>
+			</div>
+		</a>
+		<a href="#" onclick="GetManager.setGameStart('Rogue')">
+			<img src="img/hero/img02.png" alt="rogue">
+			<div>
+				<h3>Warrior</h3>
+				<p>Rogue are fast and have high stamina and speed which makes up their lack in strength and health.</p>
+			</div>
+		</a>
+		<a href="#" onclick="GetManager.setGameStart('Mage')">
+			<img src="img/hero/img03.png" alt="mage">
+			<div>
+				<h3>Warrior</h3>
+				<p>Mages are g lass canons which puts all their effort into spells. This mean they slack on everything else.</p>
+			</div>
+		</a>
+		<a href="#" onclick="GetManager.setGameStart('Hunter')">
+			<img src="img/hero/img04.png" alt="hunter">
+			<div>
+				<h3>Warrior</h3>
+				<p>Hunter are well rounded fighters that focus on evening out their skills. No strenght or weaknesses.</p>
+			</div>
 		</a>
 
 	</div>
